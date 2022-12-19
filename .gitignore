@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 .vscode
 .DS_Store
+/index.html.old
+/assest/js/script.js.old
