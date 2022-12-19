@@ -1,0 +1,30 @@
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+.jumbotron {
+    align-items: center;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    background: url("../img/pexels-pixabay-33545\ \(2\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15vh;
+    color: #F7CBD2;
+   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    
+  }
+  

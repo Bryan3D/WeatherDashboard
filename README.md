@@ -1,5 +1,5 @@
 # Weather Dashboard App 📆 ☀️
-
+![Alt text](assest/img/pexels-pixabay-33545%20(2).jpg)
 ## Table of Contents
 
 ---
