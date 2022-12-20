@@ -53,7 +53,7 @@ html {
   .card{
     flex-wrap: no-wrap;
     width: 50%;
-    height: 100%;
+    height:fit-content;
     background: #68646452;
     border-radius: 10px;
     padding: 10px;
