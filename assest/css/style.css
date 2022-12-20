@@ -1,30 +1,229 @@
-body {
-    font-family: 'poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1;
+html {
+    overflow-x: hidden;
+  }
+  .jumbotron h1 {
+    background: rgba(250, 221, 221, 0.35);
+    height: 200px;
+    color: #fff;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 50px;
+    }
+
+    
+  
+  body {
+    font-family: "Segoe-UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin:10px;
+    background-color: rgba(45, 62, 80, 0.8);
   }
 
-.jumbotron {
-    align-items: center;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: bold;
-    background: url("../img/pexels-pixabay-33545\ \(2\).jpg");
+  
+
+
+  
+  #bg {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 15vh;
-    color: #F7CBD2;
-   
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 0px;
-    
+    z-index: -3;
   }
   
+  header {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  h1 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 16px 7px;
+    max-width: 1088px;
+    opacity: 0;
+    transition: all .75s ease-in-out;
+  }
+  
+  main.show {
+    opacity: 1;
+  }
+  
+  main aside.parameters {
+    width: calc(25% - 11px);
+    display: flex;
+    flex-direction: column;
+    padding-right: 11px;
+  }
+  
+  main aside.parameters h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  
+  main aside.parameters input,
+  main aside.parameters button {
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0;
+    opacity: 0.8;
+  }
+  
+  main aside.parameters input {
+    margin-bottom: 16px;
+    min-height: 30px;
+  }
+  
+  main aside.parameters button.search-btn {
+    background-color: #5098e6;
+    color: #fff;
+  }
+  
+  main aside.parameters hr {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border: 0;
+    background: #989898;
+    height: 1px;
+  }
+  
+  main aside.parameters button {
+    margin-bottom: 16px;
+    white-space: nowrap;
+    min-height: 36px;
+    cursor: pointer;
+  }
+  
+  main aside.parameters .search-history {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  main div.output {
+    width: calc(75% - 11px);
+    padding-left: 11px;
+  }
+  
+  main div.output section.today-section {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 16px 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  main div.output section.today-section #city {
+    text-transform: capitalize;
+  }
+  
+  main div.output section.today-section .uv span {
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 6px;
+    margin-left: 8px;
+  }
+  
+  main div.output section.today-section .uv span.favorable {
+    background-color: rgb(0, 129, 0);
+  }
+  main div.output section.today-section .uv span.moderate {
+    background-color: rgb(222, 145, 0);
+  }
+  main div.output section.today-section .uv span.severe {
+    background-color: rgb(195, 0, 0);
+  }
+  
+  main div.output section.today-section .icon {
+    max-height: 45px;
+    opacity: 0;
+  }
+  
+  main div.output section.today-section .flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  main div.output section.five-day-forecast > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0;
+  }
+  
+  main div.output section.five-day-forecast > div > div {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 50px 20px;
+    width: 14%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  main div.output section.five-day-forecast > div > div .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    opacity: 0;
+  }
+  
+  main div.output section.five-day-forecast > div > div p {
+    font-size: 90%;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    main aside.parameters,
+    main div.output {
+      width: 100%;
+      padding-left: 0;
+    }
+  
+    main div.output section.five-day-forecast > div {
+      flex-direction: column;
+    }
+  
+    main div.output section.five-day-forecast > div > div {
+      width: unset;
+      padding: 50px 15px 20px;
+      margin-bottom: 10px;
+    }
+
+
+  }
