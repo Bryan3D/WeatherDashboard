@@ -30,7 +30,7 @@ By clicking on the following link, you can easily view and test this web-based a
 ## Weather Dashboard Demo Image
 
 ---
-![Alt text](img/2022-12-15%2015_44_28-Work%20Day%20Scheduler.png)
+![Alt text](assest/img/2022-12-20%2017_37_00-The%20Weather%20Dashboard!.png)
 
 ## Inquire
 
