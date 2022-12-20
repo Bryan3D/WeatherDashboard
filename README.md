@@ -23,7 +23,7 @@ Travelers want to know the weather outlook for multiple cities so they can plan 
 ---
 By clicking on the following link, you can easily view and test this web-based app for evaluation 🔗.
 
-[Weather Dashboard webpage link](https://bryan3d.github.io/Work-Day-Scheduler/)
+[Weather Dashboard webpage link](https://bryan3d.github.io/WeatherDashboard/)
 
 ---
 
