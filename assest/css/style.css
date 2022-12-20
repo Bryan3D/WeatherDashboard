@@ -4,16 +4,17 @@ html {
   
   .jumbotron h1{
     background: #68646452;
-    height: 200px;
+    height: auto;
     width: 100vw;
     color: rgb(219, 219, 219);
     align-items: center;
     font-size: 6rem;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
     font-family: 'Anton', sans-serif;
     font-weight: 700;
     border-radius: 10px;
+    margin-bottom: 50px;
   }
 
    .description .humidity .wind{
