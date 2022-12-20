@@ -1,28 +1,32 @@
 html {
     overflow-x: hidden;
   }
-  .jumbotron h1 {
-    background: rgba(250, 221, 221, 0.35);
+  
+  .jumbotron h1{
+    background: #68646452;
     height: 200px;
-    color: #fff;
+    width: 100vw;
+    color: rgb(219, 219, 219);
     align-items: center;
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
     padding-top: 50px;
-    }
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+  }
 
-    
-  
+   .description .humidity .wind{
+    color: #fff;
+   }
+
   body {
+    background: #2d3e50;
     font-family: "Segoe-UI", Tahoma, Geneva, Verdana, sans-serif;
     margin:10px;
     background-color: rgba(45, 62, 80, 0.8);
   }
 
-  
-
-
-  
   #bg {
     position: fixed;
     left: 50%;
@@ -34,196 +38,106 @@ html {
     background-size: cover;
     z-index: -3;
   }
-  
-  header {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  h1 {
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  h3 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    color: #fff;
-  }
-  
-  main {
+
+  .information{
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    padding: 16px 7px;
-    max-width: 1088px;
-    opacity: 0;
-    transition: all .75s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #68646452;
   }
+
+  .card{
+    flex-wrap: no-wrap;
+    width: 50%;
+    height: 100%;
+    background: #68646452;
+    border-radius: 10px;
+    padding: 10px;
   
-  main.show {
-    opacity: 1;
   }
-  
-  main aside.parameters {
-    width: calc(25% - 11px);
+
+.weather{
+
     display: flex;
     flex-direction: column;
-    padding-right: 11px;
-  }
-  
-  main aside.parameters h2 {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    color: #fff;
-  }
-  
-  main aside.parameters input,
-  main aside.parameters button {
-    border-radius: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 700;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border: 0;
-    opacity: 0.8;
-  }
-  
-  main aside.parameters input {
-    margin-bottom: 16px;
-    min-height: 30px;
-  }
-  
-  main aside.parameters button.search-btn {
-    background-color: #5098e6;
-    color: #fff;
-  }
-  
-  main aside.parameters hr {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 16px;
-    border: 0;
-    background: #989898;
-    height: 1px;
-  }
-  
-  main aside.parameters button {
-    margin-bottom: 16px;
-    white-space: nowrap;
-    min-height: 36px;
-    cursor: pointer;
-  }
-  
-  main aside.parameters .search-history {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  main div.output {
-    width: calc(75% - 11px);
-    padding-left: 11px;
-  }
-  
-  main div.output section.today-section {
-    margin-bottom: 10px;
-    border-radius: 6px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding: 16px 16px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-  }
-  
-  main div.output section.today-section #city {
-    text-transform: capitalize;
-  }
-  
-  main div.output section.today-section .uv span {
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 6px;
-    margin-left: 8px;
-  }
-  
-  main div.output section.today-section .uv span.favorable {
-    background-color: rgb(0, 129, 0);
-  }
-  main div.output section.today-section .uv span.moderate {
-    background-color: rgb(222, 145, 0);
-  }
-  main div.output section.today-section .uv span.severe {
-    background-color: rgb(195, 0, 0);
-  }
-  
-  main div.output section.today-section .icon {
-    max-height: 45px;
-    opacity: 0;
-  }
-  
-  main div.output section.today-section .flex-container {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+ 
+  .weather h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
   }
   
-  main div.output section.five-day-forecast > div {
+  .weather p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .weather img{
+    width: 100px;
+    height:100px;
+    margin: 20px auto;
+  }
+ 
+
+  .weather .temp p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .weather .temp img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .weather .temp .temp-max p{
+    font-size: 1rem;
+
+}
+
+.general{
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border: 0;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 10px;
+    padding: 10px;
   }
-  
-  main div.output section.five-day-forecast > div > div {
-    position: relative;
-    border-radius: 5px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding: 50px 20px;
-    width: 14%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  main div.output section.five-day-forecast > div > div .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60px;
-    opacity: 0;
-  }
-  
-  main div.output section.five-day-forecast > div > div p {
-    font-size: 90%;
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    main {
-      flex-direction: column;
-    }
-  
-    main aside.parameters,
-    main div.output {
-      width: 100%;
-      padding-left: 0;
-    }
-  
-    main div.output section.five-day-forecast > div {
-      flex-direction: column;
-    }
-  
-    main div.output section.five-day-forecast > div > div {
-      width: unset;
-      padding: 50px 15px 20px;
-      margin-bottom: 10px;
-    }
+ 
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+
+}
+
+.input{
+ 
+  padding:1em;
+  background: #68646400;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
 
 
-  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@700&family=Rubik+Storm&display=swap');
